@@ -32,7 +32,7 @@ enum ResponseStatus {
 export const SuccessOkResponse = (res: Response, msg = 'OK', data?: unknown): Response => {
   const body = {
     message: msg,
-    StatusCode: StatusCode.SUCCESS
+    statusCode: StatusCode.SUCCESS
   }
   if (data !== undefined) Object.assign(body, { data })
   return res.status(ResponseStatus.OK).json(body)
@@ -41,7 +41,7 @@ export const SuccessOkResponse = (res: Response, msg = 'OK', data?: unknown): Re
 export const SuccessCreatedResponse = (res: Response, msg = 'OK', data?: unknown): Response => {
   const body = {
     message: msg,
-    StatusCode: StatusCode.SUCCESS
+    statusCode: StatusCode.SUCCESS
   }
   if (data !== undefined) Object.assign(body, { data })
   return res.status(ResponseStatus.CREATED).json(body)

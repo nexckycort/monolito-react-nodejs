@@ -34,7 +34,6 @@ const config: Configuration = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: '.env', to: '.' },
         { from: 'package.json', to: '.' }
       ]
     })

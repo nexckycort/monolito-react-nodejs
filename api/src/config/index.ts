@@ -9,6 +9,8 @@ export const name = process.env.NAME_API ?? ''
 
 export const corsUrl = process.env.CORS_URL ?? ''
 
+export const debug = Boolean(process.env.DEBUG ?? '0')
+
 export let pathPublic!: string
 if (environment === ENVIRONMENT.PRODUCTION || environment === undefined) pathPublic = __dirname
 else pathPublic = path.join(__dirname, '..')
