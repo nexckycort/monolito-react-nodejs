@@ -1,0 +1,20 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": "src",
+    "paths": {
+      "api/*": ["api/*"],
+      "config": ["config"],
+      "handlers/*": ["handlers/*"],
+      "helpers/*": ["helpers/*"],
+      "interfaces/*": ["interfaces/*"],
+      "jobs/*": ["jobs/*"],
+      "lib/*": ["lib/*"],
+      "loaders/*": ["loaders/*"],
+      "models/*": ["models/*"],
+      "services/*": ["services/*"]
+    }
+  },
+  "include": ["src"]
+}
