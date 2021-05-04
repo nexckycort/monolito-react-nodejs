@@ -17,11 +17,11 @@ export default (): Application => {
   // Helmet can help protect your app from some well-known web vulnerabilities by setting HTTP headers appropriately
   app.use(helmet())
 
-  // Enable Cross Origin Resource Sharing to all origins by default
-  app.use(cors({ origin: corsUrl, optionsSuccessStatus: 200 }))
-
   // Gzip compression can greatly decrease the size of the response body
   app.use(compression())
+
+  // Enable Cross Origin Resource Sharing to all origins by default
+  app.use(cors({ origin: corsUrl, optionsSuccessStatus: 200 }))
 
   // Useful if you're behind a reverse proxy (Heroku, Bluemix, AWS ELB, Nginx, etc)
   // It shows the real origin IP in the heroku or Cloudwatch logs
