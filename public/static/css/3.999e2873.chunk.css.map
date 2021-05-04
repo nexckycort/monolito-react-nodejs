@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/infrastructure/pages/Home/Home.module.css"],"names":[],"mappings":"AAAA,oBACE,iBAAkB,CAClB,OAAQ,CACR,QAAS,CACT,sCAAgC,CAAhC,8BACF","file":"3.999e2873.chunk.css","sourcesContent":[".center {\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}\r\n"]}
